@@ -1,21 +1,33 @@
 {
-    "name": "react-snippets",
-    "displayName": "react-snippets",
-    "description": "it 's a react code generator",
-    "version": "0.0.1",
-    "publisher": "hamza",
-    "engines": {
-        "vscode": "^1.28.0"
-    },
-    "categories": [
-        "Snippets"
-    ],
-    "contributes": {
-        "snippets": [
-            {
-                "language": "javascriptreact",
-                "path": "./snippets/snippets.json"
-            }
-        ]
-    }
+  "name": "react-snippets",
+  "displayName": "react-snippets",
+  "description": "it 's a react code generator",
+  "version": "0.0.1",
+  "publisher": "hamza",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/hamzachaouch/react-snippets"
+  },
+  "engines": {
+    "vscode": "^1.28.0"
+  },
+  "icon": "icon.jpg",
+  "categories": [
+    "Snippets"
+  ],
+  "contributes": {
+    "snippets": [
+      {
+        "language": "javascriptreact",
+        "path": "./snippets/snippets.json"
+      },
+      {
+        "language": "javascript",
+        "path": "./snippets/snippets.json"
+      }
+    ]
+  },
+  "dependencies": {
+    "npm": "^5.7.1"
+  }
 }

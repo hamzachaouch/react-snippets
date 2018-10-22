@@ -1,1 +1,94 @@
-{}
+{
+  "class component": {
+    "prefix": "!cc",
+    "body": [
+      "import React, { Component } from 'react';",
+      "$0",
+      "class ${1} extends React.Component {",
+      "$0",
+
+      "render() {",
+      "$0",
+      "  return <React.Fragment>",
+      "$0",
+      "$0",
+      "</React.Fragment>;",
+      "}",
+      "$0",
+      "export default ${1} ;"
+    ],
+    "description": "generates a class component"
+  },
+  "console log": {
+    "prefix": "!cl",
+    "body": ["console.log(${1});"],
+    "description": "it generate a console.log()"
+  },
+  "if": {
+    "prefix": "!if",
+    "body": ["if(${1}){", "$0", "};"],
+    "description": "it generate an if "
+  },
+  "elif": {
+    "prefix": "!elif",
+    "body": ["if(${1}){", "$0", "}else{", "$0", "}"],
+    "description": "it generate an if else"
+  },
+  "life cycle did mount": {
+    "prefix": "!didm",
+    "body": ["componentDidMount(${1});"],
+    "description": "componentDidMount"
+  },
+  "life cycle did update": {
+    "prefix": "!didu",
+    "body": ["componentDidUpdate(${1});"],
+    "description": "componentDidUpdate"
+  },
+  "life cycle will update": {
+    "prefix": "!willu",
+    "body": ["componentWillUpdate(${1});"],
+    "description": "componentWillUpdate"
+  },
+  "life cycle will mount": {
+    "prefix": "!willm",
+    "body": ["componentWillMount(${1});"],
+    "description": "componentWillMount"
+  },
+  "life cycle will unmount": {
+    "prefix": "!willunm",
+    "body": ["componentWillUnmount(${1});"],
+    "description": "componentWillUnmount"
+  },
+  "life cycle will recieve props": {
+    "prefix": "!willr",
+    "body": ["componentWillReceiveProps(${1});"],
+    "description": "componentWillReceiveProps"
+  },
+  "set state": {
+    "prefix": "!ss",
+    "body": ["this.setState({${1}});"],
+    "description": "setState()"
+  },
+  "generates a function": {
+    "prefix": "!func",
+    "body": ["${1}=()=>{;", "$0", "}"],
+    "description": "arrow function"
+  },
+  "switch case": {
+    "prefix": "!switch",
+    "body": [
+      "switch(${1}) {",
+      "$0",
+      "case :",
+      "$0",
+      "return;",
+      "$0",
+      "default:",
+      "$0",
+      "return;",
+      "$0",
+      "}"
+    ],
+    "description": "this is a switch statement"
+  }
+}
