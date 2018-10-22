@@ -1,0 +1,21 @@
+{
+    "name": "react-snippets",
+    "displayName": "react-snippets",
+    "description": "it 's a react code generator",
+    "version": "0.0.1",
+    "publisher": "hamza",
+    "engines": {
+        "vscode": "^1.28.0"
+    },
+    "categories": [
+        "Snippets"
+    ],
+    "contributes": {
+        "snippets": [
+            {
+                "language": "javascriptreact",
+                "path": "./snippets/snippets.json"
+            }
+        ]
+    }
+}
